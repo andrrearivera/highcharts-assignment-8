@@ -42,12 +42,15 @@ main {
   margin: auto;
   padding: 2rem;
   font-size: 20px;
-  align-items: center;
 }
 section {
   max-width: 600px;
 }
 
+#text {
+  padding-right: 5rem;
+  line-height: 2.5rem;
+}
 
 #charts {
   margin: 0;
@@ -77,17 +80,21 @@ a:hover {
 }
 
 @media screen and (max-width:800px){
-  main{
-    display: none;
-    margin: 1rem;
+  main {
+    display: flex;
     padding: 1rem;
-  }
-  #container {
-    height:200px;
-  }
+}
+section{
+max-width: 400px;
+}
 
-  #container2 {
-    height: 200px;
-  }
-/* I couldn't figure this out */
+#text{
+padding: 1rem;
+min-width: 300px;
+}
+
+#charts{
+padding: 1rem;
+}
+
 }
